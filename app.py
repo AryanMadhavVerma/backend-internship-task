@@ -15,6 +15,7 @@ init_jwt(app)
 
 if __name__ == '__main__':
     with app.app_context():
+        #to create the tables with the schema defined in db.Model class
         db.create_all()
     app.run()
 
